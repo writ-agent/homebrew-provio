@@ -2,26 +2,26 @@
 class Provio < Formula
   desc "Safety floor for AI coding agents: one policy, checked before every tool call"
   homepage "https://getprovio.vercel.app"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/writ-agent/provio/releases/download/v0.1.3/provio-aarch64-apple-darwin"
-      sha256 "49c5eff0e577328a286b523e5750e830254b9c784183bd4be0361f148579a8d9"
+      url "https://github.com/writ-agent/provio/releases/download/v0.1.4/provio-aarch64-apple-darwin"
+      sha256 "9cbd156e95bad55d974d9a5d6ef3902065b734e69590272635ad223480e0f452"
     else
-      url "https://github.com/writ-agent/provio/releases/download/v0.1.3/provio-x86_64-apple-darwin"
-      sha256 "c2f379d0fb329da5bdcfc6c6a055d8ab6aba970272e204945ddd4cbef66f82db"
+      url "https://github.com/writ-agent/provio/releases/download/v0.1.4/provio-x86_64-apple-darwin"
+      sha256 "cac2d5e5611e22e703e14108cee603cb9504b1d38868a238907de3d1aa592967"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/writ-agent/provio/releases/download/v0.1.3/provio-aarch64-unknown-linux-musl"
-      sha256 "6c6ae8fcd8b293680088cbd276cd38f4bf587c1de622b44b7fb74b5d49c88184"
+      url "https://github.com/writ-agent/provio/releases/download/v0.1.4/provio-aarch64-unknown-linux-musl"
+      sha256 "bf1e26135575503d3985385b5eacab4630db8d859f8b36e9ccb06eab7df6cbf7"
     else
-      url "https://github.com/writ-agent/provio/releases/download/v0.1.3/provio-x86_64-unknown-linux-musl"
-      sha256 "bae173d91756824131e6fc8e993dfad9119933c68f87cba0ea942f8b1ae8e88c"
+      url "https://github.com/writ-agent/provio/releases/download/v0.1.4/provio-x86_64-unknown-linux-musl"
+      sha256 "ae6b3e5ef44d144ec605728443a9d273f184380adb909daa438dfa9e5579c58e"
     end
   end
 
